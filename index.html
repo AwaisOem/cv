@@ -1,226 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awais CV</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 40px;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        h1 {
-            text-align: center;
-            color: #2c3e50;
-        }
-        h2 {
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 5px;
-            color: #2980b9;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .contact-info {
-            text-align: center;
-            list-style: none;
-            padding: 0;
-        }
-        .contact-info li {
-            display: inline;
-            margin: 0 15px;
-            font-size: 16px;
-        }
-        .contact-info a {
-            text-decoration: none;
-            color: #3498db;
-            font-weight: bold;
-        }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        ul li {
-            margin-bottom: 10px;
-        }
-        strong {
-            color: #2c3e50;
-        }
-        .project-links a {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-        }
-        .skill-card {
-            background: #ecf0f1;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .skill-card h3 {
-            margin-bottom: 10px;
-            color: #2c3e50;
-        }
-        .skill-card ul {
-            list-style-type: none;
-            padding: 0;
-            font-size: 14px;
-        }
-        .experience {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        .experience-item {
-            background: #ecf0f18d;
-            padding: 15px;
-            border-radius: 5px;
-        }
-        .experience-item h3 {
-            margin: 0;
-            color: #2c3e50;
-        }
-        .experience-item p {
-            margin: 5px 0 0;
-            font-size: 14px;
-            color: #555;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awais CV</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 40px;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    h2 {
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 5px;
+      color: #2980b9;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .contact-info {
+      text-align: center;
+      list-style: none;
+      padding: 0;
+    }
+    .contact-info li {
+      display: inline;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+    .contact-info a {
+      text-decoration: none;
+      color: #3498db;
+      font-weight: bold;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    strong {
+      color: #2c3e50;
+    }
+    .project-links a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    .skill-card {
+      background: #ecf0f1;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .skill-card h3 {
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+    .skill-card ul {
+      list-style-type: none;
+      padding: 0;
+      font-size: 14px;
+    }
+    .experience {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .experience-item {
+      background: #ecf0f18d;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .experience-item h3 {
+      margin: 0;
+      color: #2c3e50;
+    }
+    .experience-item p {
+      margin: 5px 0 0;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Muhammad Awais Raza</h1>
-        <ul class="contact-info">
-            <li>📞 <a href="https://wa.me/923001104451">+92 300 1104451</a></li>
-            <li>📧 <a href="mailto:awaisoem@gmail.com">awaisoem@gmail.com</a></li>
-            <li>🔗 <a href="https://www.linkedin.com/in/awaisoem">LinkedIn</a></li>
-            <li>💻 <a href="https://github.com/awaisoem">GitHub</a></li>
-        </ul>
+  <!-- Wrap entire resume as a Person -->
+  <div class="container" itemscope itemtype="http://schema.org/Person">
+    <h1 itemprop="name">Muhammad Awais Raza</h1>
+    <ul class="contact-info">
+      <li><a href="https://wa.me/923001104451" itemprop="telephone">+92 300 1104451</a></li>
+      <li><a href="mailto:awaisoem@gmail.com" itemprop="email">awaisoem@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/awaisoem" itemprop="sameAs">LinkedIn</a></li>
+      <li><a href="https://github.com/awaisoem" itemprop="sameAs">GitHub</a></li>
+    </ul>
 
-        <div class="section">
-            <h2>Education</h2>
-            <div class="experience">
-                <div class="experience-item">
-                    <h3>Bachelor of Science in Computer Science - University of Sargodha</h3>
-                    <p>Nov 2021 - Jun 2025</p>
-                    <ul>
-                        <li>CGPA: 3.8/4.0</li>
-                    </ul>
-                </div>
-            </div>
+    <!-- Education Section -->
+    <div class="section">
+      <h2>Education</h2>
+      <div class="experience">
+        <div class="experience-item" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+          <h3><span itemprop="name">University of Sargodha</span></h3>
+          <p>
+            <span itemprop="educationalCredentialAward">Bachelor of Science in Computer Science</span> - 
+            <time itemprop="startDate" datetime="2021-11">Nov 2021</time> - 
+            <time itemprop="endDate" datetime="2025-06">Jun 2025</time>
+          </p>
+          <ul>
+            <li>CGPA: 3.8/4.0</li>
+          </ul>
         </div>
-
-        <div class="section">
-            <h2>Experience</h2>
-            <div class="experience">
-                <div class="experience-item">
-                    <h3>Full-Stack Developer - Stealth Startup (Remote)</h3>
-                    <p>June 2024 - September 2024</p>
-                    <ul>
-                        <li>Developed a full web product, dashboard, and maintained it.</li>
-                        <li>Implemented authentication/authorization system, PayPal, and crypto payments.</li>
-                        <li>Integrated real-time data updates for a seamless user experience.</li>
-                    </ul>
-                </div>
-                <div class="experience-item">
-                    <h3>Software Engineer - Techlogans (Hybrid)</h3>
-                    <p>August 2023 - April 2024</p>
-                    <ul>
-                        <li>Created a full Android/iOS app for complex production pipelines using Flutter.</li>
-                        <li>Built an AI Telegram bot for quiz-based learning using OpenAI API and Python.</li>
-                        <li>Developed features in Web3 apps (React, React Native, Web3.js).</li>
-                        <li>Designed database and built CRUD API for MMA data using PostgreSQL and TypeScript.</li>
-                        <li>Migrated website from React.js (CSR) to Next.js (SSR, SSG) for better performance.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="section">
-            <h2>Projects</h2>
-            <ul class="project-links">
-                <li><strong>AI Agentic Chatbot for University Data (FYP)</strong> (Apr 2025) - <a href="https://github.com/AwaisOem/Uni-assist-ai">GitHub</a></li>
-                <li><strong>Socion:Social Media App</strong> (Java, XML, Firebase) (May 2024) - <a href="https://github.com/AwaisOem/Socion">GitHub</a></li>
-                <li><strong>P2P Audio Calling by Email</strong> (React.js, WebRTC, Supabase) (Mar 2024) - <a href="https://github.com/AwaisOem/calling-app-frontend">GitHub</a></li>
-                <li><strong>Oprux:Offline Services App</strong> (React Native, Next.js, Supabase, Maps) (Dec 2023) - <a href="https://github.com/AwaisOem/Oprux">GitHub</a></li>
-                <li><strong>Online Pharmacy & Doctor Appointment Booking</strong>(PHP, JS, PostgreSQL, WebRTC(Video Calling)) (Jun 2023) - <a href="https://github.com/AwaisOem/al-huda-virtual-hospital">GitHub</a></li>
-                <li><strong>Courses Enrollment Platform LMS</strong> (Next.js, Firebase, PWA) (Sep 2022) - <a href="https://wowlearns.vercel.app/">Live Demo</a></li>
-                <li><strong>Social Media Video Sharing Platform</strong> (Next.js, Sanity) (Jun 2022) - <a href="https://github.com/AwaisOem/PetReels">GitHub</a></li>
-            </ul>
-        </div>
-        <div class="section">
-            <h2>Hackathon Projects</h2>
-            <ul class="project-links">
-                <li><strong>AI Interviewer</strong> - (AI71 LLM, OpenAI Whisper, CV Parsing) - <a href="https://github.com/AwaisOem/ai-interviewer">GitHub</a></li>
-                <li><strong>Crops Danger Prediction</strong> - (IBM Watson AI, Granite Model) - <a href="https://github.com/AwaisOem/crop-prediction">GitHub</a></li>
-            </ul>
-        </div>
-        <div class="section">
-            <h2>Activities & Achievements</h2>
-            <ul class="project-links">
-                <li>🏆 Co-founded <strong>Techive</strong> - Largest Tech Society at University of Sargodha (150+ members, 350 applicants).</li>
-                <li>🧠 Solved 200+ Leetcode Problems - <a href="http://leetcode.com/u/awaisoem">Leetcode Profile</a></li>
-            </ul>
-        </div>
-        <div class="section">
-            <h2>Languages</h2>
-            <ul>
-                <li>English - C1 CEFR(IELTS 7.0)</li>
-                <li>Urdu - Native</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <div class="skill-card">
-                    <h3>Software Development</h3>
-                    <ul>
-                        <li>MERN, Next.js</li>
-                        <li>Flask, FAST-API</li>
-                        <li>PHP, jQuery</li>
-                        <li>WebRTC, Redis, Docker</li>
-                        <li>React Native, Flutter</li>
-                        <li>Native (XML/Java)</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>AI/Python Engineer</h3>
-                    <ul>
-                        <li>Telegram Bots</li>
-                        <li>Automation Scripts</li>
-                        <li>Pandas, Numpy, Scikit-learn</li>
-                        <li>Data Cleaning, EDA</li>
-                        <li>Vector/Graph RAG</li>
-                        <li>Langchain, LangGraph</li>
-                        <li>LLMs, Hugging Face</li>
-                        <li>Neo4j, Pinecone</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-
-
-        
+      </div>
     </div>
+
+    <!-- Experience Section -->
+    <div class="section">
+      <h2>Experience</h2>
+      <div class="experience">
+        <!-- Full-Stack Developer Experience -->
+        <div class="experience-item" itemprop="hasOccupation" itemscope itemtype="http://schema.org/Occupation">
+          <h3 itemprop="name">Full-Stack Developer - Stealth Startup (Remote)</h3>
+          <p>
+            <time itemprop="startDate" datetime="2024-06">June 2024</time> - 
+            <time itemprop="endDate" datetime="2024-09">September 2024</time>
+          </p>
+          <ul>
+            <li itemprop="description">Developed a full web product, dashboard, and maintained it.</li>
+            <li itemprop="description">Implemented authentication/authorization system, PayPal, and crypto payments.</li>
+            <li itemprop="description">Integrated real-time data updates for a seamless user experience.</li>
+          </ul>
+        </div>
+        <!-- Software Engineer Experience -->
+        <div class="experience-item" itemprop="hasOccupation" itemscope itemtype="http://schema.org/Occupation">
+          <h3 itemprop="name">Software Engineer - Techlogans (Hybrid)</h3>
+          <p>
+            <time itemprop="startDate" datetime="2023-08">August 2023</time> - 
+            <time itemprop="endDate" datetime="2024-04">April 2024</time>
+          </p>
+          <ul>
+            <li itemprop="description">Created a full Android/iOS app for complex production pipelines using Flutter.</li>
+            <li itemprop="description">Built an AI Telegram bot for quiz-based learning using OpenAI API and Python.</li>
+            <li itemprop="description">Developed features in Web3 apps (React, React Native, Web3.js).</li>
+            <li itemprop="description">Designed database and built CRUD API for MMA data using PostgreSQL and TypeScript.</li>
+            <li itemprop="description">Migrated website from React.js (CSR) to Next.js (SSR, SSG) for better performance.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="section">
+      <h2>Projects</h2>
+      <ul class="project-links">
+        <li itemprop="workExample" itemscope itemtype="http://schema.org/CreativeWork">
+          <strong itemprop="name">AI Agentic Chatbot for University Data (FYP)</strong> (Apr 2025) - 
+          <a href="https://github.com/AwaisOem/Uni-assist-ai" itemprop="url">GitHub</a>
+        </li>
+        <li itemprop="workExample" itemscope itemtype="http://schema.org/CreativeWork">
+          <strong itemprop="name">Socion:Social Media App</strong> (Java, XML, Firebase) (May 2024) - 
+          <a href="https://github.com/AwaisOem/Socion" itemprop="url">GitHub</a>
+        </li>
+        <li itemprop="workExample" itemscope itemtype="http://schema.org/CreativeWork">
+          <strong itemprop="name">P2P Audio Calling by Email</strong> (React.js, WebRTC, Supabase) (Mar 2024) - 
+          <a href="https://github.com/AwaisOem/calling-app-frontend" itemprop="url">GitHub</a>
+        </li>
+        <li itemprop="workExample" itemscope itemtype="http://schema.org/CreativeWork">
+          <strong itemprop="name">Oprux:Offline Services App</strong> (React Native, Next.js, Supabase, Maps) (Dec 2023) - 
+          <a href="https://github.com/AwaisOem/Oprux" itemprop="url">GitHub</a>
+        </li>
+        <li itemprop="workExample" itemscope itemtype="http://schema.org/CreativeWork">
+          <strong itemprop="name">Online Pharmacy &amp; Doctor Appointment Booking</strong> (PHP, JS, PostgreSQL, WebRTC(Video Calling)) (Jun 2023) - 
+          <a href="https://github.com/AwaisOem/al-huda-virtual-hospital" itemprop="url">GitHub</a>
+        </li>
+        <li itemprop="workExample" itemscope itemtype="http://schema.org/CreativeWork">
+          <strong itemprop="name">Courses Enrollment Platform LMS</strong> (Next.js, Firebase, PWA) (Sep 2022) - 
+          <a href="https://wowlearns.vercel.app/" itemprop="url">Live Demo</a>
+        </li>
+        <li itemprop="workExample" itemscope itemtype="http://schema.org/CreativeWork">
+          <strong itemprop="name">Social Media Video Sharing Platform</strong> (Next.js, Sanity) (Jun 2022) - 
+          <a href="https://github.com/AwaisOem/PetReels" itemprop="url">GitHub</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Hackathon Projects Section -->
+    <div class="section">
+      <h2>Hackathon Projects</h2>
+      <ul class="project-links">
+        <li itemprop="workExample" itemscope itemtype="http://schema.org/CreativeWork">
+          <strong itemprop="name">AI Interviewer</strong> - (AI71 LLM, OpenAI Whisper, CV Parsing) - 
+          <a href="https://github.com/AwaisOem/ai-interviewer" itemprop="url">GitHub</a>
+        </li>
+        <li itemprop="workExample" itemscope itemtype="http://schema.org/CreativeWork">
+          <strong itemprop="name">Crops Danger Prediction</strong> - (IBM Watson AI, Granite Model) - 
+          <a href="https://github.com/AwaisOem/crop-prediction" itemprop="url">GitHub</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Activities & Achievements Section -->
+    <div class="section">
+      <h2>Activities &amp; Achievements</h2>
+      <ul class="project-links">
+        <li itemprop="award">Co-founded <strong>Techive</strong> - Largest Tech Society at University of Sargodha (150+ members, 350 applicants).</li>
+        <li>Solved 200+ Leetcode Problems - <a href="http://leetcode.com/u/awaisoem" itemprop="url">Leetcode Profile</a></li>
+      </ul>
+    </div>
+
+    <!-- Languages Section -->
+    <div class="section">
+      <h2>Languages</h2>
+      <ul>
+        <li itemprop="knowsLanguage">English - C1 CEFR(IELTS 7.0)</li>
+        <li itemprop="knowsLanguage">Urdu - Native</li>
+      </ul>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="section">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <h3>Software Development</h3>
+          <ul>
+            <li itemprop="knowsAbout">MERN, Next.js</li>
+            <li itemprop="knowsAbout">Flask, FAST-API</li>
+            <li itemprop="knowsAbout">PHP, jQuery</li>
+            <li itemprop="knowsAbout">WebRTC, Redis, Docker</li>
+            <li itemprop="knowsAbout">React Native, Flutter</li>
+            <li itemprop="knowsAbout">Native (XML/Java)</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>AI/Python Engineer</h3>
+          <ul>
+            <li itemprop="knowsAbout">Telegram Bots</li>
+            <li itemprop="knowsAbout">Automation Scripts</li>
+            <li itemprop="knowsAbout">Pandas, Numpy, Scikit-learn</li>
+            <li itemprop="knowsAbout">Data Cleaning, EDA</li>
+            <li itemprop="knowsAbout">Vector/Graph RAG</li>
+            <li itemprop="knowsAbout">Langchain, LangGraph</li>
+            <li itemprop="knowsAbout">LLMs, Hugging Face</li>
+            <li itemprop="knowsAbout">Neo4j, Pinecone</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
